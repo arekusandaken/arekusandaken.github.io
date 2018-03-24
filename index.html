@@ -3,17 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="shortcut icon" href="/images/icon.ico" type="image/png">
+	<link rel="shortcut icon" href="/images/icon.ico" type="image/ico">
 	<link href='style.css' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>Збережемо природу</title>
 </head>
-<body>
+<body class="ru">
 
 <div id="loader">
 	<img src="images/preloader.gif" width="30%"/>
 </div>
 
+<div class="ru" lang="ru">
 <div id="menu">
 	<nav>
 		<ul>
@@ -21,9 +22,14 @@
 			<li><a href="#" onclick="loadFile(main);">Главная</a></li>
 			<li><a href="#" onclick="likeShow()">Добро</a></li>
 			<li><a href="#" onclick="dislikeShow();">Зло</a></li>
+			<div>
+			<span class="lang-switcher lang-switcher--ru" id="switcher-ru">RU</span>
+			<span class="lang-switcher lang-switcher--en" id="switcher-en">EN</span>
+			</div>
 		</ul>
 	</nav>
 </div>
+
 <div id="header">
 	<p> LOADING...</p>
 </div>
@@ -31,6 +37,7 @@
 <footer>
 	Powered by DreamTeam
 </footer>
+</div>
 <div id="spacerEnd"></div>
 	<script type="text/javascript" src="script.js">
 </script>
